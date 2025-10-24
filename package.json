@@ -10,7 +10,8 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "build": "echo 'No build step required for Node.js'",
-    "vercel-build": "echo 'Vercel build completed'"
+    "vercel-build": "echo 'Vercel build completed'",
+    "render-build": "echo 'Render build completed'"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",

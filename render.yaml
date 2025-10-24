@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: chatly-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGODB_URL
+        value: mongodb+srv://sahilsahoo519:gNSBspUmi4HsK2OS@cluster0.rwlbt4l.mongodb.net/chatapp
+      - key: JWT_SECRET
+        value: your_secure_jwt_secret_here_change_this
+      - key: CLOUD_NAME
+        value: daypm11q0
+      - key: API_KEY
+        value: 139165429865843
+      - key: API_SECRET
+        value: W700pmT5Bc_R82t1gw7uPoZj7Zo
+      - key: FRONTEND_URL
+        value: https://your-frontend-domain.vercel.app

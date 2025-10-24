@@ -9,7 +9,7 @@ import userRouter from "./routes/user.routes.js"
 import messageRouter from "./routes/message.routes.js"
 import { app, server } from "./socket/socket.js"
 
-const port=process.env.PORT || 5000
+const port=process.env.PORT || 3000
 
 
 // CORS configuration for both development and production
@@ -17,6 +17,7 @@ app.use(cors({
     origin: [
         "http://localhost:5173",
         "http://localhost:3000",
+        "https://chattapp-frontend.vercel.app",
         process.env.FRONTEND_URL
     ].filter(Boolean),
     credentials: true,
